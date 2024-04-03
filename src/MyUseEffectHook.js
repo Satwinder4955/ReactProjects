@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Child from './Child';
+import Child from "./Effect";
 
 const MyUseEffectHook = ()=>{
 const [count, setCount] = useState(0);
@@ -24,4 +24,21 @@ const hide = () =>{
     setIsChild(false);
 }
 
+useEffect(() => {
+    console.log("fetch from database")
+}, [count, age]);
+
+return (
+    <>
+    <h1>UseEffect</h1>
+    <button onClick={increment}>Increment</button>
+    <button onClick={updateAge}>UpdateAge</button>
+    <button onClick={show}>Show</button>
+    <button onClick={hide}>Hide</button>
+    {isChild ? <Child/> : null}
+    </>
+)
+
 }
+
+export default MyUseEffectHook;

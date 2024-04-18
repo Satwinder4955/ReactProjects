@@ -4,6 +4,8 @@ import Information from './Information';
 import MyUseEffectHook from './MyUseEffectHook';
 import './App.css';
 import MyUseRef from './MyUseRef';
+import MyStylesComponent from './MyStylesComponent';
+import MyListComponent from './MyListComponent';
 
 
 
@@ -12,8 +14,10 @@ function App() {
     <div className="App">
       {/* <MyComponent/> */}
       {/* <Information/> */}
-      <MyUseEffectHook/>
-      <MyUseRef/>
+      {/* <MyUseEffectHook/>
+      <MyUseRef/> */}
+      <MyListComponent/>
+      <MyStylesComponent/>
       
     </div>
   );

@@ -3,6 +3,8 @@ import MyComponent from './MyComponent';
 import Information from './Information';
 import MyUseEffectHook from './MyUseEffectHook';
 import './App.css';
+import MyUseRef from './MyUseRef';
+
 
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
       {/* <MyComponent/> */}
       {/* <Information/> */}
       <MyUseEffectHook/>
+      <MyUseRef/>
+      
     </div>
   );
 }
